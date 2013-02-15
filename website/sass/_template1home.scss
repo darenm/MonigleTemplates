@@ -1,0 +1,97 @@
+@import "colors";
+
+body {
+  background-color: $temp1-page-bg;
+  color: $temp1-page-fg;
+}
+
+.canvas {
+  background: white;
+  width: auto;
+  width: 1140px;
+  margin: 0 auto;
+  padding: 60px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header-padding {
+}
+
+.add-top-margin {
+  margin-top: 60px;
+}
+
+.full-width {
+  margin-left: -60px;
+  margin-right: -60px;
+  width: auto !important;
+}
+
+/* line 52, ../sass/_statichomepage.scss */
+.site-nav {
+  float: right;
+  list-style-type: none;
+}
+/* line 56, ../sass/_statichomepage.scss */
+.site-nav li {
+  float: left;
+  background: transparent;
+  padding-left: 30px;
+  margin: 0px;
+  color: #999;
+  line-height: 30px;
+  height: 30px;
+  text-transform: uppercase;
+}
+
+// top nav
+
+.menu-label{
+  color: $temp1-topbar-label !important;
+}
+
+
+/* Lists */
+
+
+/* Layouts and margins */
+
+#canvas {
+
+}
+
+.site-title {
+  margin: 0;
+  font-family: $headerFontFamily;
+  font-size: ms(3);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+.logo-link  {
+  color: $temp1-logo;
+  &:hover {
+    color: $temp1-logo;
+  }
+}
+
+.actorfont {
+  font-family: $navFontFamily;
+  font-size: 14px;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-style: normal;
+}
+

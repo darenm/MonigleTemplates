@@ -1,0 +1,432 @@
+/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-localities",function(a){a.namespace("Squarespace");
+a.Squarespace.Localities={COUNTRY_OPTIONS:{"":{title:"Not Specified",empty:true},US:{title:"United States"},CA:{title:"Canada"},AF:{title:"Afghanistan"},AL:{title:"Albania"},DZ:{title:"Algeria"},AS:{title:"American Samoa"},AD:{title:"Andorra"},AO:{title:"Angola"},AI:{title:"Anguilla"},AQ:{title:"Antarctica"},AG:{title:"Antigua and Barbuda"},AR:{title:"Argentina"},AM:{title:"Armenia"},AW:{title:"Aruba"},AU:{title:"Australia"},AT:{title:"Austria"},AZ:{title:"Azerbaijan"},BS:{title:"Bahamas"},BH:{title:"Bahrain"},BD:{title:"Bangladesh"},BB:{title:"Barbados"},BY:{title:"Belarus"},BE:{title:"Belgium"},BZ:{title:"Belize"},BJ:{title:"Benin"},BM:{title:"Bermuda"},BT:{title:"Bhutan"},BO:{title:"Bolivia"},BA:{title:"Bosnia and Herzegovina"},BW:{title:"Botswana"},BV:{title:"Bouvet Island"},BR:{title:"Brazil"},IO:{title:"British Indian Ocean Territory"},BN:{title:"Brunei Darussalam"},BG:{title:"Bulgaria"},BF:{title:"Burkina Faso"},BI:{title:"Burundi"},KH:{title:"Cambodia"},CM:{title:"Cameroon"},CV:{title:"Cape Verde"},KY:{title:"Cayman Islands"},CF:{title:"Central African Republic"},TD:{title:"Chad"},CL:{title:"Chile"},CN:{title:"China"},CX:{title:"Christmas Island"},CC:{title:"Cocos (Keeling) Islands"},CO:{title:"Colombia"},KM:{title:"Comoros"},CG:{title:"Congo"},CK:{title:"Cook Islands"},CR:{title:"Costa Rica"},HR:{title:"Croatia (Hrvatska)"},CU:{title:"Cuba"},CY:{title:"Cyprus"},CZ:{title:"Czech Republic"},CS:{title:"Czechoslovakia (former)"},DK:{title:"Denmark"},DJ:{title:"Djibouti"},DM:{title:"Dominica"},DO:{title:"Dominican Republic"},TP:{title:"East Timor"},EC:{title:"Ecuador"},EG:{title:"Egypt"},SV:{title:"El Salvador"},GQ:{title:"Equatorial Guinea"},ER:{title:"Eritrea"},EE:{title:"Estonia"},ET:{title:"Ethiopia"},FK:{title:"Falkland Islands (Malvinas)"},FO:{title:"Faroe Islands"},FJ:{title:"Fiji"},FI:{title:"Finland"},FR:{title:"France"},FX:{title:"France, Metropolitan"},GF:{title:"French Guiana"},PF:{title:"French Polynesia"},TF:{title:"French Southern Territories"},GA:{title:"Gabon"},GM:{title:"Gambia"},GE:{title:"Georgia"},DE:{title:"Germany"},GH:{title:"Ghana"},GI:{title:"Gibraltar"},GB:{title:"Great Britain (UK)"},GR:{title:"Greece"},GL:{title:"Greenland"},GD:{title:"Grenada"},GP:{title:"Guadeloupe"},GU:{title:"Guam"},GT:{title:"Guatemala"},GN:{title:"Guinea"},GW:{title:"Guinea-Bissau"},GY:{title:"Guyana"},HT:{title:"Haiti"},HM:{title:"Heard and McDonald Islands"},HN:{title:"Honduras"},HK:{title:"Hong Kong"},HU:{title:"Hungary"},IS:{title:"Iceland"},IN:{title:"India"},ID:{title:"Indonesia"},IR:{title:"Iran"},IQ:{title:"Iraq"},IE:{title:"Ireland"},IL:{title:"Israel"},IT:{title:"Italy"},JM:{title:"Jamaica"},JP:{title:"Japan"},JO:{title:"Jordan"},KZ:{title:"Kazakhstan"},KE:{title:"Kenya"},KI:{title:"Kiribati"},KP:{title:"Korea (North)"},KR:{title:"Korea (South)"},KW:{title:"Kuwait"},KG:{title:"Kyrgyzstan"},LA:{title:"Laos"},LV:{title:"Latvia"},LB:{title:"Lebanon"},LS:{title:"Lesotho"},LR:{title:"Liberia"},LY:{title:"Libya"},LI:{title:"Liechtenstein"},LT:{title:"Lithuania"},LU:{title:"Luxembourg"},MO:{title:"Macau"},MK:{title:"Macedonia"},MG:{title:"Madagascar"},MW:{title:"Malawi"},MY:{title:"Malaysia"},MV:{title:"Maldives"},ML:{title:"Mali"},MT:{title:"Malta"},MH:{title:"Marshall Islands"},MQ:{title:"Martinique"},MR:{title:"Mauritania"},MU:{title:"Mauritius"},YT:{title:"Mayotte"},MX:{title:"Mexico"},FM:{title:"Micronesia"},MD:{title:"Moldova"},MC:{title:"Monaco"},MN:{title:"Mongolia"},ME:{title:"Montenegro"},MS:{title:"Montserrat"},MA:{title:"Morocco"},MZ:{title:"Mozambique"},MM:{title:"Myanmar"},NA:{title:"Namibia"},NR:{title:"Nauru"},NP:{title:"Nepal"},NL:{title:"Netherlands"},AN:{title:"Netherlands Antilles"},NT:{title:"Neutral Zone"},NC:{title:"New Caledonia"},NZ:{title:"New Zealand (Aotearoa)"},NI:{title:"Nicaragua"},NE:{title:"Niger"},NG:{title:"Nigeria"},NU:{title:"Niue"},NF:{title:"Norfolk Island"},MP:{title:"Northern Mariana Islands"},NO:{title:"Norway"},OM:{title:"Oman"},PK:{title:"Pakistan"},PW:{title:"Palau"},PA:{title:"Panama"},PG:{title:"Papua New Guinea"},PY:{title:"Paraguay"},PE:{title:"Peru"},PH:{title:"Philippines"},PN:{title:"Pitcairn"},PL:{title:"Poland"},PT:{title:"Portugal"},PR:{title:"Puerto Rico"},QA:{title:"Qatar"},RE:{title:"Reunion"},RO:{title:"Romania"},RU:{title:"Russian Federation"},RW:{title:"Rwanda"},GS:{title:"S. Georgia and S. Sandwich Isls."},KN:{title:"Saint Kitts and Nevis"},LC:{title:"Saint Lucia"},VC:{title:"Saint Vincent and the Grenadines"},WS:{title:"Samoa"},SM:{title:"San Marino"},ST:{title:"Sao Tome and Principe"},SA:{title:"Saudi Arabia"},SN:{title:"Senegal"},RS:{title:"Serbia"},SC:{title:"Seychelles"},SL:{title:"Sierra Leone"},SG:{title:"Singapore"},SK:{title:"Slovak Republic"},SI:{title:"Slovenia"},Sb:{title:"Solomon Islands"},SO:{title:"Somalia"},ZA:{title:"South Africa"},ES:{title:"Spain"},LK:{title:"Sri Lanka"},SH:{title:"St. Helena"},PM:{title:"St. Pierre and Miquelon"},SD:{title:"Sudan"},SR:{title:"Suriname"},SJ:{title:"Svalbard and Jan Mayen Islands"},SZ:{title:"Swaziland"},SE:{title:"Sweden"},CH:{title:"Switzerland"},SY:{title:"Syria"},TW:{title:"Taiwan"},TJ:{title:"Tajikistan"},TZ:{title:"Tanzania"},TH:{title:"Thailand"},TG:{title:"Togo"},TK:{title:"Tokelau"},TO:{title:"Tonga"},TT:{title:"Trinidad and Tobago"},TN:{title:"Tunisia"},TR:{title:"Turkey"},TM:{title:"Turkmenistan"},TC:{title:"Turks and Caicos Islands"},TV:{title:"Tuvalu"},UM:{title:"US Minor Outlying Islands"},SU:{title:"USSR (former)"},UG:{title:"Uganda"},UA:{title:"Ukraine"},AE:{title:"United Arab Emirates"},UK:{title:"United Kingdom"},UY:{title:"Uruguay"},UZ:{title:"Uzbekistan"},VU:{title:"Vanuatu"},VA:{title:"Vatican City State (Holy See)"},VE:{title:"Venezuela"},VN:{title:"Viet Nam"},VG:{title:"Virgin Islands (British)"},VI:{title:"Virgin Islands (U.S.)"},WF:{title:"Wallis and Futuna Islands"},EH:{title:"Western Sahara"},YE:{title:"Yemen"},YU:{title:"Yugoslavia"},ZR:{title:"Zaire"},ZM:{title:"Zambia"},ZW:{title:"Zimbabwe"}},STATE_OPTIONS:{"":{title:"Not Specified",empty:true},AL:{title:"Alabama"},AK:{title:"Alaska"},AZ:{title:"Arizona"},AR:{title:"Arkansas"},CA:{title:"California"},CO:{title:"Colorado"},CT:{title:"Connecticut"},DE:{title:"Delaware"},FL:{title:"Florida"},GA:{title:"Georgia"},HI:{title:"Hawaii"},ID:{title:"Idaho"},IL:{title:"Illinois"},IN:{title:"Indiana"},IA:{title:"Iowa"},KS:{title:"Kansas"},KY:{title:"Kentucky"},LA:{title:"Louisiana"},ME:{title:"Maine"},MD:{title:"Maryland"},MA:{title:"Massachusetts"},MI:{title:"Michigan"},MN:{title:"Minnesota"},MS:{title:"Mississippi"},MO:{title:"Missouri"},MT:{title:"Montana"},NE:{title:"Nebraska"},NV:{title:"Nevada"},NH:{title:"New Hampshire"},NJ:{title:"New Jersey"},NM:{title:"New Mexico"},NY:{title:"New York"},NC:{title:"North Carolina"},ND:{title:"North Dakota"},OH:{title:"Ohio"},OK:{title:"Oklahoma"},OR:{title:"Oregon"},PA:{title:"Pennsylvania"},RI:{title:"Rhode Island"},SC:{title:"South Carolina"},SD:{title:"South Dakota"},TN:{title:"Tennessee"},TX:{title:"Texas"},UT:{title:"Utah"},VT:{title:"Vermont"},VA:{title:"Virginia"},WA:{title:"Washington"},DC:{title:"Washington, District of Columbia"},WV:{title:"West Virginia"},WI:{title:"Wisconsin"},WY:{title:"Wyoming"}}}
+});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-list",function(b){var a=b.namespace("Squarespace.DialogFields").List=b.Base.create("list",b.Squarespace.DialogField2,[],{initializer:function(d){var e=this.getProperty("DATA_STATES");
+var c=d.data;
+if(c){this.set("dataState",this.getProperty("DATA_STATES").LOADED);
+this._addItems(c)
+}else{this.after(this.get("id")+"|dataStateChange",function(f){if(f.newVal===e.LOADED){this._addItems(f.data||this.get("data"))
+}},this);
+this._loadData()
+}},renderUI:function(){a.superclass.renderUI.call(this);
+var d=this.get("boundingBox"),c=this.get("strings");
+d.one("button.add-item").setContent(c.addButton);
+d.one(".list-title").setContent(c.title);
+var e=d.one(".list-items .empty");
+e.setContent(this.get("strings.emptyText"));
+e.show();
+var f=d.one(".add-item");
+if(this.get("showAddControl")){f.show()
+}else{f.hide()
+}this._childrenContainer=d.one(".list-items")
+},bindUI:function(){a.superclass.bindUI.call(this);
+var c=this.get("boundingBox");
+c.on(this.get("id")+"|click",function(g){if(g.target.ancestor(".list-items",false)){var h=g.target.ancestor("."+b.Squarespace.DialogField2.CSS_PREFIX,true),d=h.getAttribute("id"),f=this.getFieldById(d);
+if(f===null){console.warn(this.name+": Field widget not found, no event will fire.");
+return
+}this.fire("list-item-click",{originalClickEvent:g,field:f,fieldData:f.get("data")})
+}},this);
+c.one("button.add-item").on(this.get("id")+"|click",function(){this.fire("add-requested")
+},this)
+},syncUI:function(){a.superclass.syncUI.call(this);
+var c=this.get("data"),d=this.get("boundingBox"),e=d.one(".list-items"),f=e.one(".empty");
+this.clearItems();
+if(c&&c.length){this._addItems(c);
+f.hide()
+}else{f.show()
+}},getFieldById:function(d){var c=null;
+this.some(function(e){if(e.get("boundingBox").get("id")===d){c=e;
+return true
+}return false
+});
+return c
+},_addItems:function(c){if(!b.Lang.isArray(c)){throw this.name+": List data was not an array"
+}b.Array.each(c,function(d){this._addItem(d)
+},this)
+},_addItem:function(c){if(this.get("rendered")){this.get("boundingBox").one(".list-items .empty").hide()
+}var d=this.add({childType:this.get("listItemConstructor"),data:c},0).item(0);
+if(!d){throw this.name+": Creating list item failed."
+}d.after(this.get("id")+"|dataChange",this._updateItem,this);
+d.after("destroy",function(f){this._removeItem(f.target)
+},this);
+return d
+},addItem:function(d){var f=this._addItem(d);
+var g=this._parseURLObject(this.get("apiURLs.createURL")),c=g.url,e=g.responseDataProperty;
+if(c){b.Data.post({url:c,data:d,success:function(i){if(this.get("mergeResponseData")){var h=e?i[e]:i;
+f.set("data",b.merge(d,h),{silent:true})
+}},failure:function(h){console.warn(this.name+": Failed to save item, reverting.");
+f.destroy()
+}},this)
+}return f
+},removeItem:function(d){var c=this.indexOf(d);
+if(c===-1){console.warn(this.name+": That item is not in this list");
+return
+}d.destroy()
+},_removeItem:function(d){var f=d.get("boundingBox");
+f.remove();
+var e=this._parseURLObject(this.get("apiURLs.deleteURL")).url;
+var c=b.bind(function(){this.remove(this.indexOf(d));
+if(this.isEmpty()){this.get("contentBox").one(".list-items .empty").show()
+}},this);
+if(e){b.Data.post({url:e,data:d.get("data"),success:c,failure:function(){f.appendTo(this._childrenContainer)
+}},this)
+}else{c()
+}},clearItems:function(){while(this.size()>0){this._removeItem(this.item(0),false)
+}this.get("boundingBox").one(".list-items .empty").show()
+},_loadData:function(){var e=this.getProperty("DATA_STATES");
+this.set("dataState",e.LOADING);
+var f=this.get("apiURLs");
+if(!f||!this._parseURLObject(f.readURL).url){this.set("dataState",e.LOADED);
+return
+}var d=this._parseURLObject(f.readURL),g=d.url,c=d.responseDataProperty;
+b.Data.post({url:g,data:this.get("requestData")||{},success:function(h){var i=c?h[c]:h;
+this.set("data",i);
+this.set("dataState",e.LOADED,{data:i})
+},failure:function(){this.get("boundingBox").one(".list-items").setContent(this.get("strings.loadFail"));
+this.set("dataState",e.LOAD_FAILED)
+}},this)
+},_parseURLObject:function(c){var d={url:null,requestData:null,responseDataProperty:null};
+if(!c){return d
+}if(b.Lang.isString(c)){return b.merge(d,{url:c||null})
+}return b.merge(d,{url:c.url||null,requestData:c.requestData||null,responseDataProperty:c.responseDataProperty||null})
+},_updateItem:function(g){var h=this._parseURLObject(this.get("apiURLs.updateURL")),f=h.url;
+if(!f){return
+}if(g.silent){return
+}var c=g.target,d=c.get("data");
+b.Data.post({url:f,data:d,success:function(i){if(this.get("mergeResponseData")){var e=this.get("mergeResponseDataProperty");
+updatedItemData=e?responseData[e]:responseData;
+c.set("data",b.merge(d,updatedItemData),{silent:true})
+}},failure:function(e){c.set("data",g.prevVal,{silent:true})
+}},this)
+}},{CSS_PREFIX:"sqs-list",ASYNC_DATA:true,PUT_TEMPLATE:'div.controls>button.add-item[type="button"]<<div.list-title+div.list-items>div.empty<<',ATTRS:{strings:{value:{title:"Set strings.title to something.",addButton:"Add Item",emptyText:"No items.",loadFail:"Unable to load items."}},data:{value:[],getter:function(){var c=[];
+this.each(function(d){c.push(d.get("data"))
+},this);
+return c
+}},apiURLs:{value:{createURL:null,readURL:null,updateURL:null,deleteURL:null}},listItemConstructor:{value:b.Squarespace.DialogField2},requestData:{value:null},responseDataProperty:{value:null},mergeResponseData:{value:true,validator:b.Lang.isBoolean},mergeResponseDataProperty:{value:null},showAddControl:{value:true}}})
+},"1.0",{requires:["widget-child","widget-parent","squarespace-dialog","squarespace-dialog-field-2"]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-coupon-list-template",function(c){var b=c.Handlebars;
+(function(){var e=b.template,d=b.templates=b.templates||{};
+d["coupon-list.html"]=e(function(i,j,g,f,h){g=g||i.helpers;
+return'<div class="field-list clear">\n  <div class="title">Coupons</div>\n  <fieldset class="form-item fields">\n    <div class="foritem field">\n      <label class="caption">\n        Enter a promotion code to redeem a coupon\n      </label>\n      <div class="codeline">\n        <div class="codeleft">\n          <input name="promocode" \n                 class="enter-promocode field-element field-control" \n                 type="text" \n                 placeholder="Promo Code"\n                 spellcheck="false" />\n         </div>\n\n        <!-- Redeem Button -->\n        <div class="button redeem-coupon">Redeem</div> \n      </div>\n\n      <!-- List -->\n      <div class="coupon-list"></div>\n      <div class="invalid-coupon-title">\n        The coupons below are no longer valid. This can occur if a coupon expires\n        or if you remove an item from your shopping cart.\n      </div>\n\n      <!-- No Longer Valid Coupons -->\n      <div class="invalid-coupon-list"></div> \n    </div>\n  </fieldset>\n</div>'
+})
+})();
+var a="coupon-list.html";
+c.Handlebars.registerPartial(a.replace("/","."),b.templates[a])
+},"1.0",{requires:["handlebars-base",]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-shopping-cart-template",function(c){var b=c.Handlebars;
+(function(){var e=b.template,d=b.templates=b.templates||{};
+d["shopping-cart.html"]=e(function(l,m,i,g,k){i=i||l.helpers;
+var h,f=this;
+function j(o,n){return'\n\n  <div class="cart-container">\n    <h2>Shopping Cart</h2>\n    <div class="cart">\n\n      <table class="table">\n        <thead class="thead"> \n          <tr class="row">\n            <td class="item">Item</td>\n            <td></td>\n            <td class="quantity">Quantity</td>\n            <td class="price">Price</td>\n            <td></td>\n          </tr>\n        <tbody class="tbody"></tbody>\n      </table>\n\n\n      <div class="subtotal">\n        <span class="label">Subtotal</span>\n        <span class="price"></span>\n      </div>\n      <div class="tax">\n        <div class="price"></div>\n        <div class="label">Tax</div>\n      </div>\n      <div class="shipping">\n        <div class="price"></div>\n        <div class="label"></div>\n      </div>\n      <div class="discounts">\n        <div class="price"></div>\n        <div class="label">Discounts</div>\n      </div>\n      <div class="total">\n        <div class="price"></div>\n        <div class="label">Grand Total</div>\n      </div>\n\n      <div class="totQty"></div>\n      <div class="suffix"></div>\n\n      <div class="checkout">\n        <div class="checkout-button">CHECKOUT</div>\n      </div>\n    </div>\n\n  </div>\n\n'
+}h=m.strings;
+h=i["with"].call(m,h,{hash:{},inverse:f.noop,fn:f.program(1,j,k)});
+if(h||h===0){return h
+}else{return""
+}})
+})();
+var a="shopping-cart.html";
+c.Handlebars.registerPartial(a.replace("/","."),b.templates[a])
+},"1.0",{requires:["handlebars-base",]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-fixed-shopping-cart-template",function(c){var b=c.Handlebars;
+(function(){var e=b.template,d=b.templates=b.templates||{};
+d["fixed-shopping-cart.html"]=e(function(l,m,i,g,k){i=i||l.helpers;
+var h,f=this;
+function j(o,n){return'\n\n  <div class="cart-container">\n    <div class="cart">\n\n      <!-- body of the cart -->\n      <div class="table">\n        <div class="thead"> \n          <div class="row">\n            <div class="item">Item</div>\n            <div class="remove" style="height:10px"></div><!--spacer-->\n            <div class="price">Price</div>\n            <div class="qty">Quantity</div>\n          </div>\n        </div>\n        <div class="tbody"></div>\n      </div>\n\n      <div class="subtotal">\n        <div class="price"></div>\n        <div class="label">Subtotal</div>\n      </div>\n      <div class="tax">\n        <div class="price"></div>\n        <div class="label">Tax</div>\n      </div>\n      <div class="shipping">\n        <div class="price"></div>\n        <div class="label">Shipping</div>\n      </div>\n      <div class="discounts">\n        <div class="price"></div>\n        <div class="label">Discounts</div>\n      </div>\n      <div class="total-wrapper">\n        <div id="grand-total" class="total">\n          <div class="price"></div>\n          <div class="label">Grand Total</div>\n        </div>\n      </div>\n\n      <div class="checkout"></div>\n    </div>\n\n    <!-- Tabby thing -->\n    <div class="tab">\n      <div class="sqs-cart-icon"></div>\n      <div class="totQty"></div>\n      <div class="suffix"></div>\n    </div>\n   \n  </div>\n'
+}h=m.strings;
+h=i["with"].call(m,h,{hash:{},inverse:f.noop,fn:f.program(1,j,k)});
+if(h||h===0){return h
+}else{return""
+}})
+})();
+var a="fixed-shopping-cart.html";
+c.Handlebars.registerPartial(a.replace("/","."),b.templates[a])
+},"1.0",{requires:["handlebars-base",]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-pill-shopping-cart-template",function(c){var b=c.Handlebars;
+(function(){var e=b.template,d=b.templates=b.templates||{};
+d["pill-shopping-cart.html"]=e(function(l,m,i,g,k){i=i||l.helpers;
+var h,f=this;
+function j(o,n){return'\n\n  <div class="cart-container">\n    <div class="cart">\n\n      <div class="sqs-cart-icon"></div>\n\n      <div class="checkout">\n        Cart&nbsp;-&nbsp;\n          <span class="totQty"></span>\n          <span class="suffix"></span>\n      </div>\n\n      <span class="subtotal">\n        <span class="price"></span>\n      </span>\n\n      <!-- Hidden -->\n      <div class="table">\n        <div class="thead"> \n          <div class="row">\n            <div class="item"></div>\n            <div class="qty"></div>\n            <div class="price"></div>\n          </div>\n        </div>\n        <div class="tbody"></div>\n      </div>\n\n      <div class="subtotal">\n        <div class="price"></div>\n        <div class="label"></div>\n      </div>\n      <div class="tax">\n        <div class="price"></div>\n        <div class="label"></div>\n      </div>\n      <div class="shipping">\n        <div class="price"></div>\n        <div class="label"></div>\n      </div>\n      <div class="discounts">\n        <div class="price"></div>\n        <div class="label"></div>\n      </div>\n      <div class="total">\n        <div class="price"></div>\n        <div class="label"></div>\n      </div>\n\n    </div>\n\n\n  </div>\n\n'
+}h=m.strings;
+h=i["with"].call(m,h,{hash:{},inverse:f.noop,fn:f.program(1,j,k)});
+if(h||h===0){return h
+}else{return""
+}})
+})();
+var a="pill-shopping-cart.html";
+c.Handlebars.registerPartial(a.replace("/","."),b.templates[a])
+},"1.0",{requires:["handlebars-base",]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-responsive-confirmation-dialog",function(a){a.Squarespace.Widgets.ResponsiveConfirmationDialog=a.Base.create("shoppingCart",a.Squarespace.SSWidget,[],{isMobile:function(){return a.one(document).get("width")<=this.get("maxWidth")
+}},{ATTRS:{maxWidth:{value:700}}});
+a.Squarespace.Widgets.ResponsiveAlert=a.Base.create("shoppingCart",a.Squarespace.Widgets.ResponsiveConfirmationDialog,[],{initializer:function(b){this._normalDialog=new a.Squarespace.Alert(b)
+},renderUI:function(){a.Squarespace.Widgets.ResponsiveAlert.superclass.renderUI.call(this)
+},show:function(c,b){if(this.isMobile()){alert(c+". "+b)
+}else{this._normalDialog.show(c,b)
+}}},{CSS_PREFIX:"sqs-responsive-alert",HANDLEBARS_TEMPLATE:"responsive-alert.html"})
+},"1.0",{requires:["node","base","anim","squarespace-ui-base"]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-commerce-analytics",function(b){var c=new b.Base.create("commerceTrack",b.Base,[],{itemViewed:function(j){this.fire("commerce-item-viewed",j)
+},itemAdded:function(j){this.fire("commerce-item-added",j)
+},itemRemoved:function(j){this.fire("commerce-item-removed",j)
+},itemModified:function(j){this.fire("commerce-item-modified",j)
+},checkoutStarted:function(j){this.fire("commerce-checkout-started",j)
+},checkoutConfirmed:function(j){this.fire("commerce-checkout-confirmed",j)
+}},{ATTRS:{}});
+b.namespace("Squarespace").CommerceAnalytics=new c();
+var a=b.Base.create("commerceAnalytics",b.Base,[],{initializer:function(){b.Squarespace.CommerceAnalytics.on("commerce-item-viewed",this._getProtectedTracker("onItemViewed"),this);
+b.Squarespace.CommerceAnalytics.on("commerce-item-added",this._getProtectedTracker("onItemAdded"),this);
+b.Squarespace.CommerceAnalytics.on("commerce-item-removed",this._getProtectedTracker("onItemRemoved"),this);
+b.Squarespace.CommerceAnalytics.on("commerce-item-modified",this._getProtectedTracker("onItemModified"),this);
+b.Squarespace.CommerceAnalytics.on("commerce-checkout-started",this._getProtectedTracker("onCheckoutStarted"),this);
+b.Squarespace.CommerceAnalytics.on("commerce-checkout-confirmed",this._getProtectedTracker("onCheckoutConfirmed"),this);
+this._setCartMode()
+},_setCartMode:function(){var k=true;
+try{k=Static.SQUARESPACE_CONTEXT.websiteSettings.storeSettings.testModeOn
+}catch(j){}this.cartMode=k?"test":"live"
+},_getProtectedTracker:function(j){return function(l){try{this[j].call(this,l)
+}catch(k){}}
+},onItemViewed:function(j){},onItemAdded:function(j){},onItemRemoved:function(j){},onItemModified:function(j){},onCheckoutStarted:function(j){},onCheckoutConfirmed:function(j){}},{ATTRS:{}});
+var d=b.Base.create("commerceAnalyticsInternal",a,[],{_createCartData:function(j){return{CartOrderId:j.id,CartSubtotal:j.subtotalCents/100,CartTax:j.taxCents/100,CartCurrency:"USD",CartMode:this.cartMode}
+},_createProductData:function(j){return{ProductId:j.itemId,ProductName:j.title,ProductType:(j.productType===2)?"DIGITAL":"PHYSICAL",ProductSKU:(j.chosenVariant)?j.chosenVariant.sku:"",ProductPrice:j.purchasePriceCents/100,ProductQuantity:j.quantity}
+},_getItemVariantPrice:function(j){var k;
+if(b.Object.hasKey(j,"onSale")&&j.onSale){k=(b.Object.hasKey(j,"salePrice")?j.salePrice:j.salePriceCents)/100
+}else{k=(b.Object.hasKey(j,"price")?j.price:j.priceCents)/100
+}return k
+},_getItemPrice:function(k){var j=0;
+if(b.Object.hasKey(k,"variants")&&k.variants.length>0){b.Array.each(k.variants,function(l){j+=this._getItemVariantPrice(l)
+},this);
+j=j/k.variants.length
+}else{j=this._getItemVariantPrice(k)
+}return j
+},_createItemData:function(j){return{ProductId:j.id,ProductName:j.title,ProductType:(j.productType===2)?"DIGITAL":"PHYSICAL",ProductPrice:this._getItemPrice(j),CartMode:this.cartMode}
+},_createItemAddedData:function(j){return b.merge(this._createCartData(j.shoppingCart),this._createProductData(j.newlyAdded))
+},_createItemRemovedData:function(j){return b.merge(this._createCartData(j.shoppingCart),this._createProductData(j.updatedEntry))
+},_createItemModifiedData:function(j){return b.merge(this._createCartData(j.shoppingCart),this._createProductData(j.updatedEntry))
+},_createItemCheckoutStartedData:function(j,k){return b.merge(this._createCartData(j),this._createProductData(k))
+},_createItemCheckoutCompletedData:function(j,k){return b.merge(this._createCartData(j),this._createProductData(k))
+},_track:function(j,k){b.Squarespace.Analytics.trackInternal(j,k)
+},onItemViewed:function(j){this._track("shopper_product_viewed",this._createItemData(j))
+}},{ATTRS:{}});
+var i=b.Base.create("commerceAnalyticsMixpanel",d,[],{_track:function(j,k){b.Squarespace.Analytics.track(j,k)
+},onItemViewed:function(j){this._track("shopper_product_viewed",this._createItemData(j))
+},onItemAdded:function(j){this._track("shopper_product_added",this._createItemAddedData(j))
+},onItemRemoved:function(j){this._track("shopper_product_removed",this._createItemRemovedData(j))
+},onItemModified:function(j){this._track("shopper_product_modified",this._createItemModifiedData(j))
+},onCheckoutStarted:function(j){b.each(j.entries,function(k){this._track("shopper_product_checkout_started",this._createItemCheckoutStartedData(j,k))
+},this)
+},onCheckoutConfirmed:function(j){b.each(j.purchasedCart.entries,function(k){this._track("shopper_product_purchased",this._createItemCheckoutCompletedData(j.purchasedCart,k))
+},this);
+this._track("shopper_order_submitted",{CartOrderId:j.purchasedCart.id,CartCurrency:"USD",CartGrandTotal:j.purchasedCart.grandTotalCents/100,CartSubtotal:j.purchasedCart.subtotalCents/100,CartTax:j.purchasedCart.taxCents/100,CartShipping:j.purchasedCart.shippingCostCents/100,CartTotalQuantity:j.purchasedCart.totalQuantity,CartMode:this.cartMode})
+}},{ATTRS:{}});
+var h=b.Base.create("commerceAnalyticsGoogle",a,[],{onCheckoutConfirmed:function(j){if(_gaq){_gaq.push(["_addTrans",j.id,"",j.purchasedCart.subtotalCents/100,j.purchasedCart.taxCents/100,j.purchasedCart.shippingCostCents/100,j.customer.billingAddress.city,j.customer.billingAddress.state,j.customer.billingAddress.country]);
+b.each(j.purchasedCart.entries,function(k){_gaq.push(["_addItem",j.id,(k.chosenVariant)?k.chosenVariant.sku:"digital",k.title,"",k.purchasePriceCents/100,k.quantity])
+});
+_gaq.push(["_trackTrans"])
+}}},{ATTRS:{}});
+var g=new d();
+var e=new i();
+var f=new h();
+if(b.Lang.isObject(Static)&&b.Object.hasKey(Static,"SQUARESPACE_CONTEXT")&&b.Object.hasKey(Static.SQUARESPACE_CONTEXT,"item")){if(Static.SQUARESPACE_CONTEXT.item.recordType===b.Squarespace.ContentConstants.STORE_ITEM){b.Squarespace.CommerceAnalytics.itemViewed(Static.SQUARESPACE_CONTEXT.item)
+}}},"1.0",{requires:["event-custom","node","base","squarespace-util"]});/* Host: nyc-webster4 Request Version: 02112013233624799 Local Version: 02112013233624799 Served from: LOCAL */ 
+YUI.add("squarespace-commerce",function(c){c.namespace("Squarespace");
+var a=".cart",g=".qty",i=".price",b=".totalPrice",e=".tab",d=".totQty",h=".suffix",f=".checkout a";
+c.Squarespace.Widgets.ShoppingCart=c.Base.create("shoppingCart",c.Squarespace.SSWidget,[],{_defaultConfig:{expressCheckout:false,useLightCart:false,shoppingCart:{entries:[]}},initializer:function(j){this.config=c.merge(this._defaultConfig,j);
+this._cart=this.config.shoppingCart;
+this.plug(c.Plugin.WidgetAnim)
+},renderUI:function(){c.Squarespace.Widgets.ShoppingCart.superclass.renderUI.call(this);
+var j=this.get("boundingBox");
+if(j.one(d)!==null){j.one(d).setContent("0")
+}},bindUI:function(){c.Squarespace.Widgets.ShoppingCart.superclass.bindUI.call(this);
+var j=this.get("contentBox"),k=j.one(".cart"),l=this.get("id");
+this.on("cartChanged",this.updateCartTotals);
+this.on("cartChanged",this.updateCheckoutHref)
+},syncUI:function(){c.Squarespace.Widgets.ShoppingCart.superclass.syncUI.call(this);
+this._cart.entries.forEach(c.bind(function(j){if(j.quantity>0){this.appendEntry(j,false)
+}},this));
+this.fire("cartChanged")
+},appendEntry:function(o,m){var l=this.get("contentBox"),p=l.one(".tbody"),j=c.zen(this.getProperty("ENTRY_PUT_TEMPLATE")),k=j.one(".item-image"),n=j.one(".item-desc");
+var q;
+if(this.config.linkItems){q=c.DB.A("item-link",{href:Static.SQUARESPACE_CONTEXT.website.authenticUrl+o.item.fullUrl},o.item.title)
+}else{q=c.DB.SPAN("item-link",o.item.title)
+}j.one(".qty").setAttribute("maxlength",4).setAttribute("value",o.quantity);
+j.one(".price").setContent("$"+c.Squarespace.Utils.moneyFormat(o.quantity*o.purchasePriceCents));
+k.append(c.DB.IMG("",{src:"/item/"+o.item.id+"?format=100w"}));
+n.append(q);
+if(!!o.chosenVariant){n.append(c.DB.DIV("variant-info",c.Squarespace.Utils.variantFormat(o.chosenVariant)))
+}j.setAttribute("data-item-id",o.item.id);
+if(o.chosenVariant!==undefined){j.setAttribute("data-chosen-variant-sku",o.chosenVariant.sku)
+}j.one(g).on("keyup",c.bind(function(r){var s=j.one(g).get("value");
+if(!c.Lang.isNumber(Number(s))||s===""){r.preventDefault();
+return
+}if(c.Lang.isNumber(Number(s))&&Number(s)>=0){this._updateCartQuantities(o,s)
+}else{j.one(g).set("value",1);
+this._updateCartQuantities(o,1)
+}},this));
+if(o.item.productType===c.Squarespace.ProductTypes.DIGITAL){j.one(g).setAttribute("readonly","readonly").addClass("readonly")
+}j.on("closed",j.remove);
+j.one(".remove-item").on("click",c.bind(function(){this.removeItem(o,j)
+},this));
+j.hide();
+if(m){j.plug(c.Squarespace.Animations.Expandable,{duration:0.25});
+j.setStyle("opacity",0);
+p.append(j);
+j.show();
+j.on("opened",function(){c.later(350,this,function(){j.unplug(c.Squarespace.Animations.Expandable);
+j.plug(c.Squarespace.Animations.Fadeable,{duration:0.25});
+j.show()
+})
+})
+}else{j.show();
+p.append(j)
+}this.fire("cartChanged")
+},isExpanded:function(){var j=this.get("contentBox").one(a);
+if((j.get("offsetWidth")===0&&j.get("offsetHeight")===0)||j.get("display")==="none"){return false
+}else{return true
+}},getExistingEntry:function(n,l){var k=this.get("contentBox"),m=k.one(".tbody");
+var j=(!!l)?l.sku:null;
+if(!!j){return m.one('.row[data-item-id="'+n+'"][data-chosen-variant-sku="'+j+'"]')
+}else{return m.one('.row[data-item-id="'+n+'"]')
+}},getShippingOptions:function(){return this._cart.shippingOptions
+},removeItem:function(k,j){j.unplug(c.Squarespace.Animations.Fadeable);
+j.plug(c.Squarespace.Animations.Expandable,{duration:0.25});
+j.plug(c.Squarespace.Animations.Fadeable,{duration:0.25});
+j.once("closed",c.bind(function(){this._updateCartQuantities(k,0)
+},this));
+j.hide()
+},_updateCartQuantities:function(m,k){var l=m.item;
+var j=this.getExistingEntry(l.id,m.chosenVariant);
+this.fire("recalculateStarted");
+c.Data.post({url:"/api/open/UpdateCart",data:{itemId:l.id,chosenVariantSku:(!!m.chosenVariant)?m.chosenVariant.sku:null,quantity:k},success:c.bind(function(o){if(o.success===false){if(o.notFound){this.showError("That item has been deleted.");
+this._cart=o.shoppingCart;
+this.fire("cartChanged");
+return
+}else{this.showError(o.message);
+j.one(g).set("value",o.qtyInStock);
+this._updateCartQuantities(m,o.qtyInStock);
+return
+}}if(k===0){c.Squarespace.CommerceAnalytics.itemRemoved(o)
+}else{c.Squarespace.CommerceAnalytics.itemModified(o)
+}this._cart=o.shoppingCart;
+var n=o.updatedEntry;
+var p=n.quantity*n.purchasePriceCents;
+if(j!==null){var q=j.one(i);
+q.setContent("$"+c.Squarespace.Utils.moneyFormat(p))
+}this.fire("cartChanged");
+this.fire("recalculateCompleted")
+},this)})
+},updateCheckoutHref:function(){var j=this.get("contentBox");
+if(j.one(f)){j.one(f).set("href",this._getCheckoutHref())
+}},gotoCheckout:function(){window.location=this._getCheckoutHref()
+},_getCheckoutHref:function(){return"https://secure."+Static.SQUARESPACE_CONTEXT.appDomain+"/checkout?cartId="+c.Cookie.get("CART")
+},updateCartTotals:function(){var q=this.get("contentBox"),o=q.one(a),j=o.one(".tbody"),s=o.one(".subtotal").one(".price"),p=o.one(".total").one(".price"),l=o.one(".shipping").one(".price"),r=o.one(".tax").one(".price"),m=o.one(".discounts"),n=o.one(".discounts").one(".price");
+var k=this.getTotals();
+q.one(d).setContent((k.superQty>100)?"100+":k.superQty);
+q.one(h).setContent((k.superQty!=1)?"items":"item");
+s.setContent("$"+c.Squarespace.Utils.moneyFormat(k.subtotalCents));
+p.setContent("$"+c.Squarespace.Utils.moneyFormat(k.grandTotalCents));
+l.setContent("$"+c.Squarespace.Utils.moneyFormat(this._cart.shippingCostCents));
+r.setContent("$"+c.Squarespace.Utils.moneyFormat(this._cart.taxCents));
+n.setContent("- $"+c.Squarespace.Utils.moneyFormat(this._cart.discountCents));
+if(this._cart.discountCents===0){m.hide()
+}else{m.show()
+}if(k.superQty===0){this._showEmptyMsg()
+}else{this._hideEmptyMsg()
+}if(k.superQty===0){q.one(".checkout").hide()
+}else{q.one(".checkout").show()
+}},_showEmptyMsg:function(){var j=this.get("contentBox"),l=j.one(a),k=l.one(".tbody");
+k.empty();
+k.append("<div class='empty-cart-msg'>You have no items in your cart.</div>")
+},_hideEmptyMsg:function(){var j=this.get("contentBox"),l=j.one(a),k=l.one(".tbody");
+if(k.one(".empty-cart-msg")){k.one(".empty-cart-msg").remove()
+}},isPurelyDigital:function(){return this._cart.purelyDigital
+},getTotals:function(){var j={superQty:0,subtotalCents:0,grandTotalCents:0};
+this._cart.entries.forEach(function(k){j.superQty+=k.quantity
+});
+j.subtotalCents=this._cart.subtotalCents;
+j.grandTotalCents=this._cart.grandTotalCents;
+return j
+},isEmpty:function(){return this.getTotals().superQty===0
+},showError:function(j){new c.Squarespace.Widgets.ResponsiveAlert({}).show("Unable to Add Item",j)
+},addItem:function(q,m,p,o,n,l){var k=(!!m)?m.sku:null;
+var j;
+if(!c.Lang.isNull(o)&&!c.Lang.isUndefined(o)){if(!c.Lang.isNumber(o)){this.showError("Payment price invalid.");
+l();
+return
+}j=Math.round((o*100)*100/100);
+if(j>999999900){this.showError("Payment price exceeds system maximum of $9,999,999.");
+l();
+return
+}}c.Data.post({url:"/api/open/AddToCart",data:{itemId:q,variantSku:k,quantity:p,payWhatYouWantPrice:j},success:c.bind(function(r){if(r.success===false){this.showError(r.reason);
+if(l){l()
+}return
+}c.Squarespace.CommerceAnalytics.itemAdded(r);
+this._cart=r.shoppingCart;
+if(this.config.expressCheckout){this.gotoCheckout()
+}else{this._addItemComplete(q,m,r,n,l)
+}},this)})
+},_addItemComplete:function(q,l,k,n,j){if(this.getExistingEntry(q,l)){var m=this.getExistingEntry(q,l),o=m.one(g),p=m.one(i);
+o.plug(c.Squarespace.Animations.Fadeable,{onlyUseOpacity:true});
+o.once("hidden",c.bind(function(){o.setAttribute("value",k.newlyAdded.quantity);
+p.setContent("$"+c.Squarespace.Utils.moneyFormat(k.newlyAdded.quantity*k.newlyAdded.purchasePriceCents));
+o.show();
+this.fire("cartChanged")
+},this));
+o.hide(false,true)
+}else{this.appendEntry(k.newlyAdded,true)
+}if(n){n()
+}}},{CSS_PREFIX:"sqs-shopping-cart",HANDLEBARS_TEMPLATE:"shopping-cart.html",ENTRY_PUT_TEMPLATE:"tr.row>td.item>div.item-image><+td.item-desc>+td.quantity>input.qty><+td.price>+td.remove>div.remove-item><<",ATTRS:{strings:{value:{tab:"Cart",checkoutText:"» Proceed to Checkout"}}}});
+c.Squarespace.Widgets.FullPageShoppingCart=c.Base.create("fullPageShoppingCart",c.Squarespace.Widgets.ShoppingCart,[],{bindUI:function(){c.Squarespace.Widgets.FullPageShoppingCart.superclass.bindUI.call(this);
+var j=this.get("contentBox");
+j.one(".checkout-button").on("click",function(){window.location=this._getCheckoutHref()
+},this)
+},syncUI:function(){c.Squarespace.Widgets.FullPageShoppingCart.superclass.syncUI.call(this)
+},_showEmptyMsg:function(){var j=this.get("contentBox");
+j.one(a).hide();
+if(j.one(".empty-cart-msg")==null){j.append(c.DB.DIV("empty-cart-msg","You have nothing in your shopping cart.&nbsp;",c.DB.A("",{href:"/",html:"Continue Shopping"})))
+}},_hideEmptyMsg:function(){var j=this.get("contentBox");
+j.one(a).show();
+if(j.one(".empty-cart-msg")){j.one(".empty-cart-msg").hide()
+}}},{CSS_PREFIX:"sqs-fullpage-shopping-cart",HANDLEBARS_TEMPLATE:"shopping-cart.html",ATTRS:{strings:{value:{checkoutText:"CHECKOUT"}}}});
+c.Squarespace.Widgets.PillShoppingCart=c.Base.create("pillShoppingCart",c.Squarespace.Widgets.ShoppingCart,[],{renderUI:function(){c.Squarespace.Widgets.PillShoppingCart.superclass.renderUI.call(this);
+var j=this.get("boundingBox");
+if(this.config.useLightCart){j.addClass("light")
+}else{j.addClass("dark")
+}if(j.one(d)!==null){j.one(d).setContent("0")
+}},bindUI:function(){c.Squarespace.Widgets.PillShoppingCart.superclass.bindUI.call(this);
+var j=this.get("contentBox"),k=j.one(a);
+this.on("cartChanged",this.updateCartTotals);
+this.on("cartChanged",this.updateCheckoutHref);
+this.get("contentBox").on("click",function(){window.location=this._getCartPageUrl()
+},this)
+},syncUI:function(){c.Squarespace.Widgets.PillShoppingCart.superclass.syncUI.call(this);
+var j=this.get("boundingBox"),k=j.one(a);
+k.plug(c.Squarespace.Animations.Scalable,{duration:0.25});
+k.hide(true);
+if(this._cart.entries.length===0){j.hide();
+k.hide()
+}else{this._showCart()
+}if(this.config.expressCheckout){j.hide()
+}this.fire("cartChanged")
+},_addItemComplete:function(m,k,j,l){this._showCart(c.bind(function(){if(this.getExistingEntry(m,k)){var n=this.getExistingEntry(m,k),o=n.one(g),p=n.one(i);
+o.plug(c.Squarespace.Animations.Fadeable,{onlyUseOpacity:true});
+o.once("hidden",c.bind(function(){o.setAttribute("value",j.newlyAdded.quantity);
+p.setContent("$"+c.Squarespace.Utils.moneyFormat(j.newlyAdded.quantity*j.newlyAdded.purchasePriceCents));
+o.show();
+this.fire("cartChanged")
+},this));
+o.hide(false,true)
+}else{this.appendEntry(j.newlyAdded,true)
+}if(l){l()
+}},this))
+},_showCart:function(j){var l=this.get("contentBox").one(a);
+if(l.get("offsetHeight")===0||l.getStyle("visibility")=="hidden"||l.getStyle("display")=="none"||l.getStyle("opacity")===0){this.get("boundingBox").show();
+l.show()
+}else{var m=new c.Anim({node:l,to:{opacity:0.7},duration:0.2,easing:c.Easing.easeOutStrong});
+var k=new c.Anim({node:l,to:{opacity:1},duration:0.5,easing:c.Easing.easeOutStrong});
+m.on("end",function(){k.run()
+});
+m.run()
+}if(j!==undefined){j()
+}},_getCartPageUrl:function(){var j="/show-cart?cartId="+c.Cookie.get("CART");
+return j
+}},{CSS_PREFIX:"sqs-pill-shopping-cart",ATTRS:{strings:{value:{checkoutText:"Cart"}}},HANDLEBARS_TEMPLATE:"pill-shopping-cart.html"})
+},"1.0",{requires:["base","base-build","widget-parent","widget-anim","squarespace-animations","squarespace-localities","squarespace-ss-widget","node","json","squarespace-ui-base","squarespace-util","squarespace-dombuilder","squarespace-list","squarespace-commerce-css","squarespace-coupon-list-template","squarespace-shopping-cart-template","squarespace-fixed-shopping-cart-template","squarespace-pill-shopping-cart-template","squarespace-responsive-confirmation-dialog","squarespace-commerce-utils","squarespace-ui-templates","squarespace-commerce-analytics"]});
